@@ -635,7 +635,7 @@ header {
 }
 
 form label {
-    float: inline-end;
+    float: right;
 }
 
 form input,
