@@ -240,17 +240,21 @@ header {
     width: 20px;
 }
 
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 990px) {
 
     .news .col-sm-12,
     .news .col-sm-12 {
         margin-bottom: 20px;
     }
-}
 
-.btns {
-    display: flex;
-    justify-content: center;
+    .news .btns {
+        display: none;
+    }
 }
 
 .btn1 {
@@ -576,6 +580,12 @@ header {
     background-color: #3485B9;
     margin-left: 20px;
     top: -5px;
+}
+
+@media (max-width: 990px) {
+    .customers {
+        display: none;
+    }
 }
 
 /* icons */
