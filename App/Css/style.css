@@ -57,10 +57,18 @@ header {
 
 
 .logo img {
-    width: 80px;
+    width: 100px;
     padding-right: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: -18px;
+}
+
+@media (max-width:990px) {
+    .logo img {
+        width: 80px;
+        padding-right: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 .navbar ul li {
