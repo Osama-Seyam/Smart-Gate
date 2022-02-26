@@ -463,14 +463,17 @@ a:hover {
 .sectors .card1,
 .sectors .card2,
 .sectors .card3 {
-    height: 100%;
     text-align: right;
     box-shadow: 0px 60px 99px #00000014;
     border-radius: 30px;
     opacity: 1;
 }
 
-.card3 {
+.sectors .card2 {
+    padding-top: 55px;
+}
+
+.sectors .card3 {
     cursor: pointer;
 }
 
@@ -478,7 +481,6 @@ a:hover {
 .sectors .card2 img,
 .sectors .card3 img {
     width: 100%;
-    height: 100%;
 }
 
 .sectors .card1 .text {
@@ -511,15 +513,7 @@ a:hover {
 
 @media (max-width: 990px) {
     .sectors {
-        margin-bottom: 220px;
-    }
-
-    .sectors .card2 {
-        margin-top: 55px;
-    }
-
-    .sectors .card3 {
-        margin-top: 100px;
+        margin-bottom: 100px;
     }
 }
 
@@ -732,15 +726,12 @@ footer .fotNav {
     text-align: center;
 }
 
-@media (max-width: 990px) {
-    footer .fotNav {
-        margin-top: 10px;
-        text-align: right;
-    }
-}
-
 footer .fotNav .p {
     margin-top: 25px;
+}
+
+.fotNav a {
+    color: white;
 }
 
 footer .fotLogo {
@@ -757,4 +748,18 @@ footer .fotLogo {
 .address img {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 990px) {
+    footer .fotNav {
+        margin-top: 10px;
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    footer .fotNav .p {
+        margin-top: 0;
+        margin-right: 25px;
+    }
 }
